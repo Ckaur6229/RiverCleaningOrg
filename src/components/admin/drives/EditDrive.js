@@ -16,11 +16,11 @@ export default function EditDrive() {
   const [fileName, setFileName] = useState("");
   const [url, setUrl] = useState("");
   const [Loader, setLoader] = useState(false);
+  const [previousImage, setPreviousImage] = useState("");
   const { id } = useParams();
   useEffect(() => {
     getData();
   }, []);
-  const [previousImage, setPreviousImage] = useState("");
   const getData = async () => {
     const driveRef = doc(db, "Drives", id);
     const driveDoc = await getDoc(driveRef);
