@@ -6,6 +6,16 @@ import { db, storage } from "../../../Firebase";
 import { toast } from "react-toastify";
 import { BeatLoader } from "react-spinners";
 export default function EditDrive() {
+  const [date, setDate] = useState("");
+  const [title, setTitle] = useState("");
+  const [members, setMembers] = useState("");
+  const [area, setArea] = useState("");
+  const [availableSlots, setAvailableSlots] = useState("")
+  const [location, setLocation] = useState("");
+  const [file, setFile] = useState({});
+  const [fileName, setFileName] = useState("");
+  const [url, setUrl] = useState("");
+  const [Loader, setLoader] = useState(false);
   const { id } = useParams();
   useEffect(() => {
     getData();
@@ -27,17 +37,6 @@ export default function EditDrive() {
       toast.error("Data doesn't exist");
     }
   };
-
-  const [date, setDate] = useState("");
-  const [title, setTitle] = useState("");
-  const [members, setMembers] = useState("");
-  const [area, setArea] = useState("");
-  const [availableSlots, setAvailableSlots] = useState("")
-  const [location, setLocation] = useState("");
-  const [file, setFile] = useState({});
-  const [fileName, setFileName] = useState("");
-  const [url, setUrl] = useState("");
-  const [Loader, setLoader] = useState(false);
 
   const changeImage = (e) => {
     setFileName(e.target.value);
