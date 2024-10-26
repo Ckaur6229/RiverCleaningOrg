@@ -145,7 +145,7 @@ export default function ManageDrive() {
                   <Link
                     to={"/admin/editdrive/" + current.id}
                     className="btn btn-outline-primary me-2 d-flex align-items-center justify-content-center"
-                    style={{ height: "100%" }}
+                    style={{ height: "100%", }}
                   >
                     <i className="fa fa-edit"></i>
                   </Link>
