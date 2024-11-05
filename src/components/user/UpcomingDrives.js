@@ -61,7 +61,6 @@ export default function ViewDrives() {
           userEmail:email,
           userName:name,
           status:1,
-          //1-> pending, 2-> approved, 3-> decline
           createdAt:Timestamp.now()
         }
         await addDoc(collection(db, "Requests"), data);

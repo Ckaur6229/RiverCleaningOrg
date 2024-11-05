@@ -88,9 +88,7 @@ export default function History() {
         ) : (
           <div className="row my-5 ">
             {request?.map((current, index) => (
-              //     <tr key={index}>
-              //   <td>Your Request for "{current?.data?.driveTitle}" is {current?.data?.status == 2 ? <span className='text-success'>Appoved</span> : current.data.status==3?<span className='text-danger'>Decline</span> :"Pending"}</td>
-              // </tr>
+             
               <div
                 className="col-lg-6 col-md-6 col-sm-9 col-11 mx-auto"
                 key={index}
