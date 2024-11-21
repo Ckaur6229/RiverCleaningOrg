@@ -26,7 +26,7 @@ useEffect(() => {
   setTimeout(() => {
     setLoader(false);
   }, 2000);
-}, []); // Ensures loader is only shown for 2 seconds on first render
+}, []); 
 
 const handleDrives = (e) => {
   e.preventDefault();

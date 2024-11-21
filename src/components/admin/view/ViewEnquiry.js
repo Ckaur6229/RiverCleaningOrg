@@ -23,7 +23,7 @@ export default function ViewEnquiry() {
       );
       setTimeout(()=>{
         setLoader(false); 
-      },1000)// Move this inside the snapshot callback
+      },1000)
     });
   };
 
