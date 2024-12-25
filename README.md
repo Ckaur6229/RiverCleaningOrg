@@ -1,2 +1,2 @@
-# 6w_2024_RF_Charanjot_PureRivers
+PureRivers
 river cleaning organisation website
